@@ -51,7 +51,7 @@ class Game:
                 exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
  
-                self.Stewart.fire_group.add(Fireball(self.Stewart.x, self.Stewart.y))  
+                self.Stewart.fire_group.add(Fireball(self.Stewart.x, self.Stewart.y - self.Stewart.h / 2))  
 
     def main_loop(self):
 
